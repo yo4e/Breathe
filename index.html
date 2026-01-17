@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathe - Relaxation App</title>
+    <meta name="description" content="Simple breathing exercise to calm your mind">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Breathe</h1>
+
+        <!-- Preset Selection -->
+        <div class="presets">
+            <button class="preset-btn active" data-preset="relax">
+                <span class="preset-icon">🌿</span>
+                <span class="preset-name">Relax</span>
+            </button>
+            <button class="preset-btn" data-preset="quick">
+                <span class="preset-icon">⚡</span>
+                <span class="preset-name">Quick</span>
+            </button>
+            <button class="preset-btn" data-preset="sleep">
+                <span class="preset-icon">🌙</span>
+                <span class="preset-name">Sleep</span>
+            </button>
+        </div>
+
+        <!-- Breathing Circle -->
+        <div class="breath-container">
+            <div class="breath-circle">
+                <div class="breath-inner"></div>
+            </div>
+        </div>
+
+        <!-- Status Display -->
+        <div class="status">
+            <p class="phase-text">Tap Start to begin</p>
+            <p class="timer">--</p>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls">
+            <button class="sound-btn" id="soundBtn" title="Toggle Sound">
+                <span class="sound-icon">🔇</span>
+            </button>
+            <button class="control-btn" id="startBtn">
+                <span class="btn-icon">▶️</span>
+                <span class="btn-text">Start</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
